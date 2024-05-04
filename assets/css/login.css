@@ -1,0 +1,111 @@
+/* Resetting default styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #1a1a1a; /* Dark gray */
+}
+
+.user_card {
+    height: 400px;
+    width: 350px;
+    margin: auto;
+    background: #444; /* Dark gray */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; /* Increased padding */
+    border-radius: 10px; /* Increased border radius */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Box shadow */
+    animation: fadeIn 0.5s ease;
+}
+
+.brand_logo_container {
+    position: absolute;
+    top: -85px; /* Adjusted position */
+    left: calc(50% - 85px);
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background: #ddd; /* Light gray */
+    padding: 0px; /* Increased padding */
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow */
+    animation: slideInTop 0.5s ease;
+}
+
+.brand_logo {
+    height: 150px;
+    width: 150px;
+    padding: -15px;
+    border-radius: 50%;
+    border: 4px solid #fff; /* White */
+   
+}
+
+/* Form container styles */
+.form_container {
+    margin-top: 50px; /* Adjusted margin */
+    animation: slideInBottom 0.5s ease;
+}
+
+/* Login button styles */
+.login_btn {
+    width: 100%;
+    background: #3498db; /* Blue */
+    color: white !important;
+    border: none; /* Removed border */
+    border-radius: 5px; /* Added border radius */
+    padding: 10px 20px; /* Increased padding */
+    cursor: pointer; /* Added cursor pointer */
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+.login_btn:hover {
+    background: #2980b9; /* Darker blue on hover */
+}
+
+/* Input styles */
+.input-group-text {
+    background: #555; /* Dark gray */
+    color: white !important;
+    border: none; /* Removed border */
+    border-radius: 5px; /* Added border radius */
+}
+
+.input_user,
+.input_pass:focus {
+    outline: none; /* Removed outline on focus */
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-50%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(50%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
